@@ -23,6 +23,7 @@ String cascadeName =
 /*"../../data/haarcascades/haarcascade_frontalface_alt.xml";*/
 "../../haarcascade_frontalface_alt.xml";
 String nestedCascadeName =
+<<<<<<< HEAD
 /*"../../data/haarcascades/haarcascade_eye_tree_eyeglasses.xml";*/
 "../..//haarcascade_eye_tree_eyeglasses.xml";
 
@@ -46,6 +47,54 @@ int main( int argc, const char** argv )
 	int width,baseWidth = 190, zoomeStep = 0;
 	
 	printf("%d",argc);
+=======
+"./haarcascade_eye_tree_eyeglasses.xml";
+
+CvCapture* capture = 0;
+Mat frame, frameCopy, image;
+const String scaleOpt = "--scale=";
+size_t scaleOptLen = scaleOpt.length();
+const String cascadeOpt = "--cascade=";
+size_t cascadeOptLen = cascadeOpt.length();
+const String nestedCascadeOpt = "--nested-cascade";
+size_t nestedCascadeOptLen = nestedCascadeOpt.length();
+String inputName;
+FILE *fp;
+char buff[255];
+CascadeClassifier cascade, nestedCascade;
+double scale = 1;
+int fwidth,baseWidth = 190, zoomeStep = 0;
+
+static int mouseX, mouseY;
+static int width,height;
+int VPSize = 50; 
+int nomeri = 0;
+
+void drowDamy(){
+	glColor4f(0.0, 0.0, 0.0,0.5);
+	glBegin(GL_POLYGON);
+	glVertex3d(-0.9,0.9,-0.5);
+	glVertex3d(-0.9, -0.9,0.5);
+	glVertex3d(0.9, -0.9,0.5);
+	glVertex3d(0.9, 0.9,-0.5);
+glEnd();
+	
+}
+
+void disp(){
+	glClearColor(1, 0.5, 0.5, 0);
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+	glRotatef(20, 1.0, 0.0, 0.0);
+	glViewport(0, 0, width, height);
+	drowDamy();
+	//gluPerspective(100.0, width/height, 1.0, 200.0);
+	//glutWireCube(0.4);
+	glFlush();
+}
+
+void idle(void){
+	glutPostRedisplay();
+>>>>>>> 6145d25cf7a653c3b7da42c0f220c7c1adceff27
 	
     /*for( int i = 1; i < argc; i++ )
 	 {
@@ -114,6 +163,7 @@ int main( int argc, const char** argv )
 				if((width-baseWidth)/20 >= zoomeStep+1){
 					zoomeStep++;
 					printf("ZoomeIn!%d:",zoomeStep);
+<<<<<<< HEAD
 					fprintf(fp,"%d\n",zoomeStep);
 					//sprintf(buff, "osascript ../../app_and_scripts/kaizoudo_up.scpt %d",zoomeStep);
 					sprintf(buff, "osascript ../../app_and_scripts/changeSpot.scpt %d",zoomeStep);
@@ -126,6 +176,16 @@ int main( int argc, const char** argv )
 					sprintf(buff, "osascript ../../app_and_scripts/changeSpot.scpt %d",zoomeStep);
 					//system(buff);
 				}
+=======
+					system(buff);
+				}else if ((fwidth-baseWidth)/20 < zoomeStep) {
+					printf("ZoomeOut!%d:",zoomeStep);
+					if(zoomeStep>0)
+						zoomeStep--;
+					system(buff);
+				}
+				nomeri = zoomeStep*10;
+>>>>>>> 6145d25cf7a653c3b7da42c0f220c7c1adceff27
 			}
 			first = false;
             if( waitKey( 10 ) >= 0 )

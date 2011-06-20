@@ -1,0 +1,189 @@
+TOpenCVSample
+v7
+r0
+t323598932.172021
+cCheck dependencies
+cProcessInfoPlistFile /Users/kikugawamariko/XCodeProjects/nomeri/build/Debug/OpenCVSample.app/Contents/Info.plist OpenCVSample-Info.plist
+cCpResource build/Debug/OpenCVSample.app/Contents/Resources/haarcascade_frontalface_alt.xml haarcascade_frontalface_alt.xml
+cCpResource build/Debug/OpenCVSample.app/Contents/Resources/haarcascade_eye_tree_eyeglasses.xml haarcascade_eye_tree_eyeglasses.xml
+cCompileC build/nomeri.build/Debug/OpenCVSample.build/Objects-normal/i386/OpenCVSample.o /Users/kikugawamariko/XCodeProjects/nomeri/OpenCVSample.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cLd /Users/kikugawamariko/XCodeProjects/nomeri/build/Debug/OpenCVSample.app/Contents/MacOS/OpenCVSample normal i386
+cTouch /Users/kikugawamariko/XCodeProjects/nomeri/build/Debug/OpenCVSample.app
+
+N/Developer/SDKs/MacOSX10.6.sdk
+c000000004A769DAB00000000000000EE
+t1249287595
+s238
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/GLUT.framework/GLUT
+c000000004D5A2790000000000001A494
+t1297754000
+s107668
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/GLUT.framework/Headers/glut.h
+c000000004A124745000000000000578C
+t1242711877
+s22412
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL
+c000000004D5A2791000000000000DB14
+t1297754001
+s56084
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/ctype.h
+c000000004A5C14A60000000000002C18
+t1247548582
+s11288
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/stdio.h
+c000000004A5C14A70000000000004174
+t1247548583
+s16756
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/stdlib.h
+c000000004A5C14A70000000000002DF5
+t1247548583
+s11765
+
+N/Users/kikugawamariko/XCodeProjects/nomeri/../../OpenCV-2.1.0/lib/Release/libcv.dylib
+c000000004D725E3300000000002C4778
+t1299340851
+s2901880
+
+N/Users/kikugawamariko/XCodeProjects/nomeri/../../OpenCV-2.1.0/lib/Release/libcvaux.dylib
+c000000004D725EBA000000000013F5E0
+t1299340986
+s1308128
+
+N/Users/kikugawamariko/XCodeProjects/nomeri/../../OpenCV-2.1.0/lib/Release/libcxcore.dylib
+c000000004D725DD100000000002E0274
+t1299340753
+s3015284
+
+N/Users/kikugawamariko/XCodeProjects/nomeri/../../OpenCV-2.1.0/lib/Release/libhighgui.dylib
+c000000004D725E5300000000000F4648
+t1299340883
+s1001032
+
+N/Users/kikugawamariko/XCodeProjects/nomeri/OpenCVSample.cpp
+c000000004D92E0820000000000001CD0
+t1301471362
+s7376
+i"OpenCVSample.h"
+i<iostream>
+i<cstdio>
+i<cstdlib>
+i<stdio.h>
+i<stdlib.h>
+i<ctype.h>
+i<GLUT/glut.h>
+i<cv.h>
+i<highgui.h>
+
+N/Users/kikugawamariko/XCodeProjects/nomeri/OpenCVSample.h
+c000000004D7382C400000000000000B0
+t1299415748
+s176
+
+N/Users/kikugawamariko/XCodeProjects/nomeri/build/Debug/OpenCVSample.app
+t1301906132
+s102
+
+N/Users/kikugawamariko/XCodeProjects/nomeri/build/Debug/OpenCVSample.app/Contents/Info.plist
+t1301467040
+s1243
+
+N/Users/kikugawamariko/XCodeProjects/nomeri/build/Debug/OpenCVSample.app/Contents/MacOS/OpenCVSample
+t1301906132
+s50104
+
+N/Users/kikugawamariko/XCodeProjects/nomeri/build/Debug/OpenCVSample.app/Contents/PkgInfo
+t1301467040
+s8
+
+N/Users/kikugawamariko/XCodeProjects/nomeri/build/Debug/OpenCVSample.app/Contents/Resources/haarcascade_eye_tree_eyeglasses.xml
+t1299344886
+s1095035
+
+N/Users/kikugawamariko/XCodeProjects/nomeri/build/Debug/OpenCVSample.app/Contents/Resources/haarcascade_frontalface_alt.xml
+t1299344886
+s919871
+
+N/Users/kikugawamariko/XCodeProjects/nomeri/build/nomeri.build/Debug/OpenCVSample.build/Objects-normal/i386/OpenCVSample.LinkFileList
+c000000004D9982CE000000000000007A
+t1301906126
+s122
+
+N/Users/kikugawamariko/XCodeProjects/nomeri/build/nomeri.build/Debug/OpenCVSample.build/Objects-normal/i386/OpenCVSample.o
+t1301906130
+s209992
+
+N/Users/kikugawamariko/XCodeProjects/nomeri/haarcascade_eye_tree_eyeglasses.xml
+c000000004BBA8D56000000000010B57B
+t1270517078
+s1095035
+
+N/Users/kikugawamariko/XCodeProjects/nomeri/haarcascade_frontalface_alt.xml
+c000000004BBA8D5600000000000E093F
+t1270517078
+s919871
+
+N/usr/local/include/opencv/cv.h
+c000000004BBA8D580000000000011ABF
+t1270517080
+s72383
+
+N/usr/local/include/opencv/highgui.h
+c000000004BBA8D5800000000000048A6
+t1270517080
+s18598
+
+NOpenCVSample-Info.plist
+c000000004D6E7CEB000000000000037F
+t1299086571
+s895
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies323598926#323598926#0(0"0(0#1#0"2565690000#0"0#
+
+CCompileC build/nomeri.build/Debug/OpenCVSample.build/Objects-normal/i386/OpenCVSample.o /Users/kikugawamariko/XCodeProjects/nomeri/OpenCVSample.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+s323598926.899502
+e323598930.308589
+r1
+xCompileC
+xbuild/nomeri.build/Debug/OpenCVSample.build/Objects-normal/i386/OpenCVSample.o
+x/Users/kikugawamariko/XCodeProjects/nomeri/OpenCVSample.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@67"Compile /Users/kikugawamariko/XCodeProjects/nomeri/OpenCVSample.cpp323598926#323598930#0(0"0(0#0#59"/Users/kikugawamariko/XCodeProjects/nomeri/OpenCVSample.cpp2565690000#1557"    cd /Users/kikugawamariko/XCodeProjects/nomeri    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/kikugawamariko/XCodeProjects/nomeri/build/nomeri.build/Debug/OpenCVSample.build/OpenCVSample-generated-files.hmap -I/Users/kikugawamariko/XCodeProjects/nomeri/build/nomeri.build/Debug/OpenCVSample.build/OpenCVSample-own-target-headers.hmap -I/Users/kikugawamariko/XCodeProjects/nomeri/build/nomeri.build/Debug/OpenCVSample.build/OpenCVSample-all-target-headers.hmap -iquote /Users/kikugawamariko/XCodeProjects/nomeri/build/nomeri.build/Debug/OpenCVSample.build/OpenCVSample-project-headers.hmap -F/Users/kikugawamariko/XCodeProjects/nomeri/build/Debug -F/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks -I/Users/kikugawamariko/XCodeProjects/nomeri/build/Debug/include -I/Developer/SDKs/MacOSX10.6.sdk/usr/include/c++/4.2.1/backward -I/Developer/SDKs/MacOSX10.6.sdk/usr/include -I/usr/local/include/opencv -I/Users/kikugawamariko/XCodeProjects/nomeri/build/nomeri.build/Debug/OpenCVSample.build/DerivedSources/i386 -I/Users/kikugawamariko/XCodeProjects/nomeri/build/nomeri.build/Debug/OpenCVSample.build/DerivedSources -c /Users/kikugawamariko/XCodeProjects/nomeri/OpenCVSample.cpp -o /Users/kikugawamariko/XCodeProjects/nomeri/build/nomeri.build/Debug/OpenCVSample.build/Objects-normal/i386/OpenCVSample.o0#
+
+CCpResource build/Debug/OpenCVSample.app/Contents/Resources/haarcascade_eye_tree_eyeglasses.xml haarcascade_eye_tree_eyeglasses.xml
+r0
+
+CCpResource build/Debug/OpenCVSample.app/Contents/Resources/haarcascade_frontalface_alt.xml haarcascade_frontalface_alt.xml
+r0
+
+CLd /Users/kikugawamariko/XCodeProjects/nomeri/build/Debug/OpenCVSample.app/Contents/MacOS/OpenCVSample normal i386
+s323598930.308719
+e323598932.142163
+r1
+xLd
+x/Users/kikugawamariko/XCodeProjects/nomeri/build/Debug/OpenCVSample.app/Contents/MacOS/OpenCVSample
+xnormal
+xi386
+lSLF07#2@104"Link /Users/kikugawamariko/XCodeProjects/nomeri/build/Debug/OpenCVSample.app/Contents/MacOS/OpenCVSample323598930#323598932#0(0"0(0#0#0"2565690000#801"    cd /Users/kikugawamariko/XCodeProjects/nomeri    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/g++-4.2 -arch i386 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/kikugawamariko/XCodeProjects/nomeri/build/Debug -L/Users/kikugawamariko/XCodeProjects/nomeri/../../OpenCV-2.1.0/lib/Release -F/Users/kikugawamariko/XCodeProjects/nomeri/build/Debug -F/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks -filelist /Users/kikugawamariko/XCodeProjects/nomeri/build/nomeri.build/Debug/OpenCVSample.build/Objects-normal/i386/OpenCVSample.LinkFileList -mmacosx-version-min=10.6 -framework Foundation -framework AppKit -lcv -lcxcore -lhighgui -lcvaux -framework OpenGL -framework GLUT -o /Users/kikugawamariko/XCodeProjects/nomeri/build/Debug/OpenCVSample.app/Contents/MacOS/OpenCVSample0#
+
+CProcessInfoPlistFile /Users/kikugawamariko/XCodeProjects/nomeri/build/Debug/OpenCVSample.app/Contents/Info.plist OpenCVSample-Info.plist
+r0
+
+CTouch /Users/kikugawamariko/XCodeProjects/nomeri/build/Debug/OpenCVSample.app
+s323598932.142374
+e323598932.171971
+r1
+xTouch
+x/Users/kikugawamariko/XCodeProjects/nomeri/build/Debug/OpenCVSample.app
+lSLF07#2@77"Touch /Users/kikugawamariko/XCodeProjects/nomeri/build/Debug/OpenCVSample.app323598932#323598932#0(0"0(0#0#0"2565690000#144"    cd /Users/kikugawamariko/XCodeProjects/nomeri    /usr/bin/touch -c /Users/kikugawamariko/XCodeProjects/nomeri/build/Debug/OpenCVSample.app0#
+
