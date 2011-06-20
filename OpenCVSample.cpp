@@ -1,26 +1,11 @@
-/*
- *  OpenCVSample.cpp
- *  OpenGLSample
- *
- *  Created by 菊川 真理子 on 11/03/03.
- *  Copyright 2011 北陸先端科学技術大学院大学. All rights reserved.
- *
- */
-
 #define CV_NO_BACKWARD_COMPATIBILITY
 
-#include "OpenCVSample.h"
+#include "cv.h"
+#include "highgui.h"
 
 #include <iostream>
 #include <cstdio>
 #include <cstdlib>
-#include<stdio.h>
-#include<stdlib.h>
-#include<ctype.h>
-#include<GLUT/glut.h>
-//#include<GL/gl.h>
-#include<cv.h>
-#include<highgui.h>
 
 #ifdef _EiC
 #define WIN32
@@ -35,72 +20,68 @@ int detectAndDraw( Mat& img,
 				  double scale);
 
 String cascadeName =
-"./haarcascade_frontalface_alt.xml";
+/*"../../data/haarcascades/haarcascade_frontalface_alt.xml";*/
+"../../haarcascade_frontalface_alt.xml";
 String nestedCascadeName =
-"./haarcascade_eye_tree_eyeglasses.xml";
+/*"../../data/haarcascades/haarcascade_eye_tree_eyeglasses.xml";*/
+"../..//haarcascade_eye_tree_eyeglasses.xml";
 
-CvCapture* capture = 0;
-Mat frame, frameCopy, image;
-const String scaleOpt = "--scale=";
-size_t scaleOptLen = scaleOpt.length();
-const String cascadeOpt = "--cascade=";
-size_t cascadeOptLen = cascadeOpt.length();
-const String nestedCascadeOpt = "--nested-cascade";
-size_t nestedCascadeOptLen = nestedCascadeOpt.length();
-String inputName;
-FILE *fp;
-char buff[255];
-CascadeClassifier cascade, nestedCascade;
-double scale = 1;
-int fwidth,baseWidth = 190, zoomeStep = 0;
-
-static int mouseX, mouseY;
-static int width,height;
-int VPSize = 20; 
-int bulevel = 30;
-
-void drowDamy(){
-	glColor4f(0.0, 0.0, 0.0,0.5);
-	glBegin(GL_POLYGON);
-	glVertex2d(-0.9,1.0);
-	glVertex2d(-0.9, -0.5);
-	glVertex2d(-0.6, 0.0);
-	glVertex2d(-0.3, -0.6);
-	glVertex2d(-0.1, -0.6);
-	glVertex2d(-0.4, 0.0);
-	glVertex2d(0.1, 0.0);
-glEnd();
+int main( int argc, const char** argv )
+{
+	//system("open ../../app_and_scripts/GauseFilter.app");
+    CvCapture* capture = 0;
+    Mat frame, frameCopy, image;
+    const String scaleOpt = "--scale=";
+    size_t scaleOptLen = scaleOpt.length();
+    const String cascadeOpt = "--cascade=";
+    size_t cascadeOptLen = cascadeOpt.length();
+    const String nestedCascadeOpt = "--nested-cascade";
+    size_t nestedCascadeOptLen = nestedCascadeOpt.length();
+    String inputName;
+	FILE *fp;
 	
-}
-
-void disp(){
-	glClearColor(1, 0.5, 0.5, 0);
-	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-	glViewport(10, 10, VPSize, VPSize);
-	glViewport(mouseX+bulevel, height-mouseY-VPSize, VPSize, VPSize);
-	drowDamy();
-	glViewport(mouseX-bulevel, height-mouseY-VPSize, VPSize, VPSize);
-	drowDamy();
-	glViewport(mouseX, height-mouseY+bulevel-VPSize, VPSize, VPSize);
-	drowDamy();
-	glViewport(mouseX, height-mouseY-bulevel-VPSize, VPSize, VPSize);
-	drowDamy();
-	glFlush();
-}
-
-void idle(void){
-	glutPostRedisplay();
+	char buff[255];
+    CascadeClassifier cascade, nestedCascade;
+    double scale = 1;
+	int width,baseWidth = 190, zoomeStep = 0;
 	
-	if( !cascade.load( cascadeName ) )
+	printf("%d",argc);
+	
+    /*for( int i = 1; i < argc; i++ )
+	 {
+	 if( cascadeOpt.compare( 0, cascadeOptLen, argv[i], cascadeOptLen ) == 0 )
+	 cascadeName.assign( argv[i] + cascadeOptLen );
+	 else if( nestedCascadeOpt.compare( 0, nestedCascadeOptLen, argv[i], nestedCascadeOptLen ) == 0 )
+	 {
+	 if( argv[i][nestedCascadeOpt.length()] == '=' )
+	 nestedCascadeName.assign( argv[i] + nestedCascadeOpt.length() + 1 );
+	 if( !nestedCascade.load( nestedCascadeName ) )
+	 cerr << "WARNING: Could not load classifier cascade for nested objects" << endl;
+	 }
+	 else if( scaleOpt.compare( 0, scaleOptLen, argv[i], scaleOptLen ) == 0 )
+	 {
+	 if( !sscanf( argv[i] + scaleOpt.length(), "%lf", &scale ) || scale < 1 )
+	 scale = 1;
+	 }
+	 else if( argv[i][0] == '-' )
+	 {
+	 cerr << "WARNING: Unknown option %s" << argv[i] << endl;
+	 }
+	 else
+	 inputName.assign( argv[i] );
+	 }*/
+	
+    if( !cascade.load( cascadeName ) )
     {
         cerr << "ERROR: Could not load classifier cascade" << endl;
         cerr << "Usage: facedetect [--cascade=\"<cascade_path>\"]\n"
 		"   [--nested-cascade[=\"nested_cascade_path\"]]\n"
 		"   [--scale[=<image scale>\n"
 		"   [filename|camera_index]\n" ;
+        return -1;
     }
 	
-	if( inputName.empty() || (isdigit(inputName.c_str()[0]) && inputName.c_str()[1] == '\0') )
+    if( inputName.empty() || (isdigit(inputName.c_str()[0]) && inputName.c_str()[1] == '\0') )
         capture = cvCaptureFromCAM( inputName.empty() ? 0 : inputName.c_str()[0] - '0' );
     else if( inputName.size() )
     {
@@ -109,58 +90,63 @@ void idle(void){
             capture = cvCaptureFromAVI( inputName.c_str() );
     }
     else
-        image = imread( "lena.jpg", 1 );	
+        image = imread( "lena.jpg", 1 );
+	
+	fp = fopen("../../files/distanceLog.txt","a");
+	
    if( capture )
     {
+        for(;;)
+        {
             IplImage* iplImg = cvQueryFrame( capture );
             frame = iplImg;
+            if( frame.empty() )
+                break;
             if( iplImg->origin == IPL_ORIGIN_TL )
                 frame.copyTo( frameCopy );
             else
                 flip( frame, frameCopy, 0 );
 			
-            fwidth = detectAndDraw( frameCopy, cascade, nestedCascade, scale );
+            width = detectAndDraw( frameCopy, cascade, nestedCascade, scale );
 			if (first == true) {
-				baseWidth = fwidth;
+				baseWidth = width;
 			} else {
-				if((fwidth-baseWidth)/20 >= zoomeStep+1){
+				if((width-baseWidth)/20 >= zoomeStep+1){
 					zoomeStep++;
 					printf("ZoomeIn!%d:",zoomeStep);
-					//sprintf(buff, "osascript scripts/zoomeIn.scpt %d",zoomeStep);
-					//sprintf(buff, "osascript scripts/zoomeIn_top.scpt %d",zoomeStep);
-					system(buff);
-				}else if ((fwidth-baseWidth)/20 < zoomeStep) {
+					fprintf(fp,"%d\n",zoomeStep);
+					//sprintf(buff, "osascript ../../app_and_scripts/kaizoudo_up.scpt %d",zoomeStep);
+					sprintf(buff, "osascript ../../app_and_scripts/changeSpot.scpt %d",zoomeStep);
+					//system(buff);
+				}else if ((width-baseWidth)/20 < zoomeStep) {
 					printf("ZoomeOut!%d:",zoomeStep);
-					if(zoomeStep>0)
-						zoomeStep--;
-					//sprintf(buff, "osascript scripts/zoomeOut.scpt %d",zoomeStep);
-					//sprintf(buff, "osascript scripts/zoomeOut_top.scpt %d",zoomeStep);
-					system(buff);
+					zoomeStep--;
+					fprintf(fp,"%d\n",zoomeStep);
+					//sprintf(buff, "osascript ../../app_and_scripts/kaizoudo_down.scpt %d",zoomeStep);
+					sprintf(buff, "osascript ../../app_and_scripts/changeSpot.scpt %d",zoomeStep);
+					//system(buff);
 				}
-				bulevel = zoomeStep*10;
 			}
-			//fp = fopen("scripts/log.txt","a");
-			//fprintf(fp,"%d->%d\n",baseWidth,width);
-			//fclose(fp);
 			first = false;
-            //if( waitKey( 10 ) >= 0 )
-            //    goto _cleanup_;
-		
-        //waitKey(0);
-	//_cleanup_:
-        //cvReleaseCapture( &capture );
+            if( waitKey( 10 ) >= 0 )
+                goto _cleanup_;
+			fflush(fp);
+        }
+        waitKey(0);
+	_cleanup_:
+        cvReleaseCapture( &capture );
     }
     else
     {
         if( !image.empty() )
         {
-            fwidth = detectAndDraw( image, cascade, nestedCascade, scale );
+            width = detectAndDraw( image, cascade, nestedCascade, scale );
             waitKey(0);
         }
         else if( !inputName.empty() )
         {
-            // assume it is a text file containing the
-			//list of the image filenames to be processed - one per line 
+            /* assume it is a text file containing the
+			 list of the image filenames to be processed - one per line */
             FILE* f = fopen( inputName.c_str(), "rt" );
             if( f )
             {
@@ -175,7 +161,7 @@ void idle(void){
                     image = imread( buf, 1 );
                     if( !image.empty() )
                     {
-						fwidth = detectAndDraw( image, cascade, nestedCascade, scale );
+						width = detectAndDraw( image, cascade, nestedCascade, scale );
                         c = waitKey(0);
                         if( c == 27 || c == 'q' || c == 'Q' )
                             break;
@@ -184,24 +170,9 @@ void idle(void){
                 fclose(f);
             }
         }
-    }	
-	
-	
-}
-
-void mouseMove(int x, int y){
-	mouseX = x; mouseY = y;
-	printf("(%d,%d)",mouseX,mouseY);
-	glLoadIdentity();
-	//glOrtho(-0.5, (GLdouble)width -0.5, (GLdouble)height -0.5, -0.5, -1.0, 1.0);
-	glutIdleFunc(idle);
-}
-
-void resize(int w, int h){
-	width=w; height=h;
-	/*glViewport(0, 0, w, h/2);
-	glLoadIdentity();
-	glOrtho(-0.5, (GLdouble)w -0.5, (GLdouble)h -0.5, -0.5, -1.0, 1.0);*/
+    }
+	fclose(fp);
+    return 0;
 }
 
 int detectAndDraw( Mat& img,
@@ -232,7 +203,7 @@ int detectAndDraw( Mat& img,
 							 //|CV_HAAR_DO_ROUGH_SEARCH
 							 |CV_HAAR_SCALE_IMAGE
 							 ,
-							 Size(30, 30) );
+							 Size(190, 190) );
     t = (double)cvGetTickCount() - t;
     printf( "new detection time = %g ms\n", t/((double)cvGetTickFrequency()*1000.) );
     for( vector<Rect>::const_iterator r = faces.begin(); r != faces.end(); r++, i++ )
@@ -242,19 +213,4 @@ int detectAndDraw( Mat& img,
 		}
     }  
 	return faceSize;
-}
-
-int main(int argc, char *argv[]){
-	glutInit(&argc, argv);
-	glutInitWindowPosition(100, 50);
-	glutInitWindowSize(200, 100);
-	glutInitDisplayMode(GLUT_SINGLE | GLUT_RGBA);
-	glutCreateWindow("mouse");
-	glutDisplayFunc(disp);	//コールバック関数
-	glutReshapeFunc(resize);	//カレントウィンドウが生成・サイズ変更した際に呼び出される処理．幅・高さを渡す	
-	glutPassiveMotionFunc(mouseMove);
-	glEnable(GL_BLEND);
-	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-	glutMainLoop();
-	return 0;
 }

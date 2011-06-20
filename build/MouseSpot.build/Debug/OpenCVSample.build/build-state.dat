@@ -1,0 +1,169 @@
+TOpenCVSample
+v7
+r0
+t329966591.135722
+cCheck dependencies
+cProcessInfoPlistFile /Users/kikugawamariko/XCodeProjects/MouseSpot/build/Debug/OpenCVSample.app/Contents/Info.plist OpenCVSample-Info.plist
+cCpResource build/Debug/OpenCVSample.app/Contents/Resources/haarcascade_frontalface_alt.xml haarcascade_frontalface_alt.xml
+cCpResource build/Debug/OpenCVSample.app/Contents/Resources/haarcascade_eye_tree_eyeglasses.xml haarcascade_eye_tree_eyeglasses.xml
+cCompileC build/MouseSpot.build/Debug/OpenCVSample.build/Objects-normal/i386/OpenCVSample.o /Users/kikugawamariko/XCodeProjects/MouseSpot/OpenCVSample.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cLd /Users/kikugawamariko/XCodeProjects/MouseSpot/build/Debug/OpenCVSample.app/Contents/MacOS/OpenCVSample normal i386
+cTouch /Users/kikugawamariko/XCodeProjects/MouseSpot/build/Debug/OpenCVSample.app
+
+N/Developer/SDKs/MacOSX10.6.sdk
+c000000004DB7BB0E00000000000000EE
+t1303886606
+s238
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Cocoa.framework/Cocoa
+c000000004D5A27900000000000003430
+t1297754000
+s13360
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
+c0000000040C4AA6800000000000001E5
+t1086630504
+s485
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/GLUT.framework/GLUT
+c000000004D5A2790000000000001A494
+t1297754000
+s107668
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL
+c000000004D5A2791000000000000DB14
+t1297754001
+s56084
+
+N/Users/kikugawamariko/XCodeProjects/MouseSpot/../../OpenCV-2.1.0/lib/Release/libcv.dylib
+c000000004D725E3300000000002C4778
+t1299340851
+s2901880
+
+N/Users/kikugawamariko/XCodeProjects/MouseSpot/../../OpenCV-2.1.0/lib/Release/libcvaux.dylib
+c000000004D725EBA000000000013F5E0
+t1299340986
+s1308128
+
+N/Users/kikugawamariko/XCodeProjects/MouseSpot/../../OpenCV-2.1.0/lib/Release/libcxcore.dylib
+c000000004D725DD100000000002E0274
+t1299340753
+s3015284
+
+N/Users/kikugawamariko/XCodeProjects/MouseSpot/../../OpenCV-2.1.0/lib/Release/libhighgui.dylib
+c000000004D725E5300000000000F4648
+t1299340883
+s1001032
+
+N/Users/kikugawamariko/XCodeProjects/MouseSpot/OpenCVSample.cpp
+c000000004DFAAC7B00000000000019E8
+t1308273787
+s6632
+i"cv.h"
+i"highgui.h"
+i<iostream>
+i<cstdio>
+i<cstdlib>
+
+N/Users/kikugawamariko/XCodeProjects/MouseSpot/build/Debug/OpenCVSample.app
+t1308273791
+s102
+
+N/Users/kikugawamariko/XCodeProjects/MouseSpot/build/Debug/OpenCVSample.app/Contents/Info.plist
+t1301467040
+s1243
+
+N/Users/kikugawamariko/XCodeProjects/MouseSpot/build/Debug/OpenCVSample.app/Contents/MacOS/OpenCVSample
+t1308273791
+s42088
+
+N/Users/kikugawamariko/XCodeProjects/MouseSpot/build/Debug/OpenCVSample.app/Contents/PkgInfo
+t1301467040
+s8
+
+N/Users/kikugawamariko/XCodeProjects/MouseSpot/build/Debug/OpenCVSample.app/Contents/Resources/haarcascade_eye_tree_eyeglasses.xml
+t1299344886
+s1095035
+
+N/Users/kikugawamariko/XCodeProjects/MouseSpot/build/Debug/OpenCVSample.app/Contents/Resources/haarcascade_frontalface_alt.xml
+t1299344886
+s919871
+
+N/Users/kikugawamariko/XCodeProjects/MouseSpot/build/MouseSpot.build/Debug/OpenCVSample.build/Objects-normal/i386/OpenCVSample.LinkFileList
+c000000004DB5A8C00000000000000080
+t1303750848
+s128
+
+N/Users/kikugawamariko/XCodeProjects/MouseSpot/build/MouseSpot.build/Debug/OpenCVSample.build/Objects-normal/i386/OpenCVSample.o
+t1308273789
+s199128
+
+N/Users/kikugawamariko/XCodeProjects/MouseSpot/haarcascade_eye_tree_eyeglasses.xml
+c000000004BBA8D56000000000010B57B
+t1270517078
+s1095035
+
+N/Users/kikugawamariko/XCodeProjects/MouseSpot/haarcascade_frontalface_alt.xml
+c000000004BBA8D5600000000000E093F
+t1270517078
+s919871
+
+N/usr/local/include/opencv/cv.h
+c000000004BBA8D580000000000011ABF
+t1270517080
+s72383
+
+N/usr/local/include/opencv/highgui.h
+c000000004BBA8D5800000000000048A6
+t1270517080
+s18598
+
+NOpenCVSample-Info.plist
+c000000004D6E7CEB000000000000037F
+t1299086571
+s895
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies329966589#329966589#0(0"0(0#1#0"4261848#0"0#
+
+CCompileC build/MouseSpot.build/Debug/OpenCVSample.build/Objects-normal/i386/OpenCVSample.o /Users/kikugawamariko/XCodeProjects/MouseSpot/OpenCVSample.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+s329966589.834519
+e329966589.921058
+r1
+xCompileC
+xbuild/MouseSpot.build/Debug/OpenCVSample.build/Objects-normal/i386/OpenCVSample.o
+x/Users/kikugawamariko/XCodeProjects/MouseSpot/OpenCVSample.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@70"Compile /Users/kikugawamariko/XCodeProjects/MouseSpot/OpenCVSample.cpp329966589#329966589#0(0"0(0#0#62"/Users/kikugawamariko/XCodeProjects/MouseSpot/OpenCVSample.cpp4261848#1611"    cd /Users/kikugawamariko/XCodeProjects/MouseSpot    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/kikugawamariko/XCodeProjects/MouseSpot/build/MouseSpot.build/Debug/OpenCVSample.build/OpenCVSample-generated-files.hmap -I/Users/kikugawamariko/XCodeProjects/MouseSpot/build/MouseSpot.build/Debug/OpenCVSample.build/OpenCVSample-own-target-headers.hmap -I/Users/kikugawamariko/XCodeProjects/MouseSpot/build/MouseSpot.build/Debug/OpenCVSample.build/OpenCVSample-all-target-headers.hmap -iquote /Users/kikugawamariko/XCodeProjects/MouseSpot/build/MouseSpot.build/Debug/OpenCVSample.build/OpenCVSample-project-headers.hmap -F/Users/kikugawamariko/XCodeProjects/MouseSpot/build/Debug -F/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks -I/Users/kikugawamariko/XCodeProjects/MouseSpot/build/Debug/include -I/Developer/SDKs/MacOSX10.6.sdk/usr/include/c++/4.2.1/backward -I/Developer/SDKs/MacOSX10.6.sdk/usr/include -I/usr/local/include/opencv -I/Users/kikugawamariko/XCodeProjects/MouseSpot/build/MouseSpot.build/Debug/OpenCVSample.build/DerivedSources/i386 -I/Users/kikugawamariko/XCodeProjects/MouseSpot/build/MouseSpot.build/Debug/OpenCVSample.build/DerivedSources -c /Users/kikugawamariko/XCodeProjects/MouseSpot/OpenCVSample.cpp -o /Users/kikugawamariko/XCodeProjects/MouseSpot/build/MouseSpot.build/Debug/OpenCVSample.build/Objects-normal/i386/OpenCVSample.o0#
+
+CCpResource build/Debug/OpenCVSample.app/Contents/Resources/haarcascade_eye_tree_eyeglasses.xml haarcascade_eye_tree_eyeglasses.xml
+r0
+
+CCpResource build/Debug/OpenCVSample.app/Contents/Resources/haarcascade_frontalface_alt.xml haarcascade_frontalface_alt.xml
+r0
+
+CLd /Users/kikugawamariko/XCodeProjects/MouseSpot/build/Debug/OpenCVSample.app/Contents/MacOS/OpenCVSample normal i386
+s329966589.921169
+e329966591.108106
+r1
+xLd
+x/Users/kikugawamariko/XCodeProjects/MouseSpot/build/Debug/OpenCVSample.app/Contents/MacOS/OpenCVSample
+xnormal
+xi386
+lSLF07#2@107"Link /Users/kikugawamariko/XCodeProjects/MouseSpot/build/Debug/OpenCVSample.app/Contents/MacOS/OpenCVSample329966589#329966591#0(0"0(0#0#0"4750400#822"    cd /Users/kikugawamariko/XCodeProjects/MouseSpot    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/g++-4.2 -arch i386 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/kikugawamariko/XCodeProjects/MouseSpot/build/Debug -L/Users/kikugawamariko/XCodeProjects/MouseSpot/../../OpenCV-2.1.0/lib/Release -F/Users/kikugawamariko/XCodeProjects/MouseSpot/build/Debug -F/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks -filelist /Users/kikugawamariko/XCodeProjects/MouseSpot/build/MouseSpot.build/Debug/OpenCVSample.build/Objects-normal/i386/OpenCVSample.LinkFileList -mmacosx-version-min=10.6 -framework Foundation -framework AppKit -lcv -lcxcore -lhighgui -lcvaux -framework OpenGL -framework GLUT -o /Users/kikugawamariko/XCodeProjects/MouseSpot/build/Debug/OpenCVSample.app/Contents/MacOS/OpenCVSample0#
+
+CProcessInfoPlistFile /Users/kikugawamariko/XCodeProjects/MouseSpot/build/Debug/OpenCVSample.app/Contents/Info.plist OpenCVSample-Info.plist
+r0
+
+CTouch /Users/kikugawamariko/XCodeProjects/MouseSpot/build/Debug/OpenCVSample.app
+s329966591.108202
+e329966591.135656
+r1
+xTouch
+x/Users/kikugawamariko/XCodeProjects/MouseSpot/build/Debug/OpenCVSample.app
+lSLF07#2@80"Touch /Users/kikugawamariko/XCodeProjects/MouseSpot/build/Debug/OpenCVSample.app329966591#329966591#0(0"0(0#0#0"2513076880#150"    cd /Users/kikugawamariko/XCodeProjects/MouseSpot    /usr/bin/touch -c /Users/kikugawamariko/XCodeProjects/MouseSpot/build/Debug/OpenCVSample.app0#
+

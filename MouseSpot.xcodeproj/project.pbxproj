@@ -1,0 +1,274 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C3A8758132298650078C2D6 /* libcv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C3A8757132298650078C2D6 /* libcv.dylib */; };
+		3C3A875A132298A80078C2D6 /* libcxcore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C3A8759132298A80078C2D6 /* libcxcore.dylib */; };
+		3C3A875C132298DB0078C2D6 /* libhighgui.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C3A875B132298DB0078C2D6 /* libhighgui.dylib */; };
+		3C3A875E132298FB0078C2D6 /* libcvaux.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C3A875D132298FB0078C2D6 /* libcvaux.dylib */; };
+		3C3A87A91322A5710078C2D6 /* haarcascade_frontalface_alt.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3C3A87A71322A5710078C2D6 /* haarcascade_frontalface_alt.xml */; };
+		3C3A87AA1322A5710078C2D6 /* haarcascade_eye_tree_eyeglasses.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3C3A87A81322A5710078C2D6 /* haarcascade_eye_tree_eyeglasses.xml */; };
+		3CB6384E131EB555002D8135 /* OpenCVSample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3CB6384D131EB555002D8135 /* OpenCVSample.cpp */; };
+		3CF6A363134317C20051AF62 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CF6A362134317C20051AF62 /* OpenGL.framework */; };
+		3CF6A367134317D60051AF62 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CF6A366134317D60051AF62 /* GLUT.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3C2172F913A05992007F1FE3 /* changeSpot.scpt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.scpt; path = changeSpot.scpt; sourceTree = "<group>"; };
+		3C3A8757132298650078C2D6 /* libcv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcv.dylib; path = "../../OpenCV-2.1.0/lib/Release/libcv.dylib"; sourceTree = SOURCE_ROOT; };
+		3C3A8759132298A80078C2D6 /* libcxcore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcxcore.dylib; path = "../../OpenCV-2.1.0/lib/Release/libcxcore.dylib"; sourceTree = SOURCE_ROOT; };
+		3C3A875B132298DB0078C2D6 /* libhighgui.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libhighgui.dylib; path = "../../OpenCV-2.1.0/lib/Release/libhighgui.dylib"; sourceTree = SOURCE_ROOT; };
+		3C3A875D132298FB0078C2D6 /* libcvaux.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcvaux.dylib; path = "../../OpenCV-2.1.0/lib/Release/libcvaux.dylib"; sourceTree = SOURCE_ROOT; };
+		3C3A87A71322A5710078C2D6 /* haarcascade_frontalface_alt.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt.xml; sourceTree = "<group>"; };
+		3C3A87A81322A5710078C2D6 /* haarcascade_eye_tree_eyeglasses.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_eye_tree_eyeglasses.xml; sourceTree = "<group>"; };
+		3C3A88B61323B5420078C2D6 /* haarfeatures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = haarfeatures.h; path = "../../OpenCV-2.1.0/apps/traincascade/haarfeatures.h"; sourceTree = SOURCE_ROOT; };
+		3C3A88B71323B5420078C2D6 /* features.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = features.h; path = "../../OpenCV-2.1.0/apps/traincascade/features.h"; sourceTree = SOURCE_ROOT; };
+		3C3A88B81323B57A0078C2D6 /* lbpfeatures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lbpfeatures.h; path = "../../OpenCV-2.1.0/apps/traincascade/lbpfeatures.h"; sourceTree = SOURCE_ROOT; };
+		3C3A88B91323B57A0078C2D6 /* boost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = boost.h; path = "../../OpenCV-2.1.0/apps/traincascade/boost.h"; sourceTree = SOURCE_ROOT; };
+		3CB6383D131EB46B002D8135 /* OpenCVSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenCVSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CB63840131EB46B002D8135 /* OpenCVSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OpenCVSample-Info.plist"; sourceTree = "<group>"; };
+		3CB6384C131EB555002D8135 /* OpenCVSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenCVSample.h; sourceTree = "<group>"; };
+		3CB6384D131EB555002D8135 /* OpenCVSample.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpenCVSample.cpp; sourceTree = "<group>"; };
+		3CF6A362134317C20051AF62 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		3CF6A366134317D60051AF62 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3CB6383B131EB46B002D8135 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C3A8758132298650078C2D6 /* libcv.dylib in Frameworks */,
+				3C3A875A132298A80078C2D6 /* libcxcore.dylib in Frameworks */,
+				3C3A875C132298DB0078C2D6 /* libhighgui.dylib in Frameworks */,
+				3C3A875E132298FB0078C2D6 /* libcvaux.dylib in Frameworks */,
+				3CF6A363134317C20051AF62 /* OpenGL.framework in Frameworks */,
+				3CF6A367134317D60051AF62 /* GLUT.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3CB6382F131EB458002D8135 = {
+			isa = PBXGroup;
+			children = (
+				3C2172F913A05992007F1FE3 /* changeSpot.scpt */,
+				3C3A88B81323B57A0078C2D6 /* lbpfeatures.h */,
+				3C3A88B91323B57A0078C2D6 /* boost.h */,
+				3C3A88B61323B5420078C2D6 /* haarfeatures.h */,
+				3C3A88B71323B5420078C2D6 /* features.h */,
+				3C3A87A71322A5710078C2D6 /* haarcascade_frontalface_alt.xml */,
+				3C3A87A81322A5710078C2D6 /* haarcascade_eye_tree_eyeglasses.xml */,
+				3C3A875D132298FB0078C2D6 /* libcvaux.dylib */,
+				3C3A875B132298DB0078C2D6 /* libhighgui.dylib */,
+				3C3A8759132298A80078C2D6 /* libcxcore.dylib */,
+				3C3A8757132298650078C2D6 /* libcv.dylib */,
+				3CB6383E131EB46B002D8135 /* Products */,
+				3CB63840131EB46B002D8135 /* OpenCVSample-Info.plist */,
+				3CB6384C131EB555002D8135 /* OpenCVSample.h */,
+				3CB6384D131EB555002D8135 /* OpenCVSample.cpp */,
+				3CF6A362134317C20051AF62 /* OpenGL.framework */,
+				3CF6A366134317D60051AF62 /* GLUT.framework */,
+			);
+			sourceTree = "<group>";
+		};
+		3CB6383E131EB46B002D8135 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3CB6383D131EB46B002D8135 /* OpenCVSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3CB6383C131EB46B002D8135 /* OpenCVSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CB63843131EB46C002D8135 /* Build configuration list for PBXNativeTarget "OpenCVSample" */;
+			buildPhases = (
+				3CB63839131EB46B002D8135 /* Resources */,
+				3CB6383A131EB46B002D8135 /* Sources */,
+				3CB6383B131EB46B002D8135 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenCVSample;
+			productName = OpenCVSample;
+			productReference = 3CB6383D131EB46B002D8135 /* OpenCVSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3CB63831131EB458002D8135 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 3CB63834131EB458002D8135 /* Build configuration list for PBXProject "MouseSpot" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 3CB6382F131EB458002D8135;
+			productRefGroup = 3CB6383E131EB46B002D8135 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3CB6383C131EB46B002D8135 /* OpenCVSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3CB63839131EB46B002D8135 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C3A87A91322A5710078C2D6 /* haarcascade_frontalface_alt.xml in Resources */,
+				3C3A87AA1322A5710078C2D6 /* haarcascade_eye_tree_eyeglasses.xml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3CB6383A131EB46B002D8135 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CB6384E131EB555002D8135 /* OpenCVSample.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3CB63832131EB458002D8135 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = /System/Library/Frameworks;
+				HEADER_SEARCH_PATHS = (
+					"/Developer/SDKs/MacOSX10.6.sdk/usr/include/c++/4.2.1/backward",
+					/Developer/SDKs/MacOSX10.6.sdk/usr/include,
+					/usr/local/include/opencv,
+				);
+				SDKROOT = /Developer/SDKs/MacOSX10.6.sdk;
+				VALID_ARCHS = "i386 ppc ppc64 ppc7400 ppc970";
+			};
+			name = Debug;
+		};
+		3CB63833131EB458002D8135 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = /System/Library/Frameworks;
+				HEADER_SEARCH_PATHS = (
+					"/Developer/SDKs/MacOSX10.6.sdk/usr/include/c++/4.2.1/backward",
+					/Developer/SDKs/MacOSX10.6.sdk/usr/include,
+					/usr/local/include/opencv,
+				);
+				SDKROOT = /Developer/SDKs/MacOSX10.6.sdk;
+				VALID_ARCHS = "i386 ppc ppc64 ppc7400 ppc970";
+			};
+			name = Release;
+		};
+		3CB63841131EB46C002D8135 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = "OpenCVSample-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../OpenCV-2.1.0/lib/Release\"";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = OpenCVSample;
+			};
+			name = Debug;
+		};
+		3CB63842131EB46C002D8135 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = "OpenCVSample-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../OpenCV-2.1.0/lib/Release\"";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = OpenCVSample;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3CB63834131EB458002D8135 /* Build configuration list for PBXProject "MouseSpot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CB63832131EB458002D8135 /* Debug */,
+				3CB63833131EB458002D8135 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CB63843131EB46C002D8135 /* Build configuration list for PBXNativeTarget "OpenCVSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CB63841131EB46C002D8135 /* Debug */,
+				3CB63842131EB46C002D8135 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3CB63831131EB458002D8135 /* Project object */;
+}
